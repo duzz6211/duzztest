@@ -5,7 +5,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>학생 소통 허브 | OO대학교 학생회</title>
+    <title>학생 소통 허브 | 건국대학교 글로컬캠퍼스 총학생회</title>
+    <meta name="description" content="건국대학교 글로컬캠퍼스 총학생회 학생 소통 허브 페이지입니다. 공지·소식, 행사, 캠퍼스 안내 등 핵심 정보를 한눈에 확인할 수 있습니다.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://example.com/first">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="학생 소통 허브 | 건국대학교 글로컬캠퍼스 총학생회">
+    <meta property="og:description" content="공지·소식, 행사, 캠퍼스 안내 등 핵심 정보를 한눈에 확인할 수 있는 학생 소통 허브 페이지입니다.">
+    <meta property="og:url" content="https://example.com/first">
+    <meta property="og:image" content="https://example.com/assets/og-default.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="학생 소통 허브 | 건국대학교 글로컬캠퍼스 총학생회">
+    <meta name="twitter:description" content="공지·소식, 행사, 캠퍼스 안내 등 핵심 정보를 한눈에 확인할 수 있는 학생 소통 허브 페이지입니다.">
+    <meta name="twitter:image" content="https://example.com/assets/og-default.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -13,18 +31,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        kuGreen: '#006b38',      /* 건국대 메인 그린 계열 */
-                        kuDark: '#12482d',       /* 더 깊은 그린 */
-                        kuYellow: '#cddc39',     /* 포인트 옐로우 */
-                        gold: '#eab308',         /* 골드 포인트 */
+                        kuGreen: '#006b38',
+                        kuDark: '#12482d',
+                        kuYellow: '#cddc39',
+                        gold: '#eab308',
                         darkBg: '#1b1b1b',
                     },
                     fontFamily: {
@@ -45,7 +62,6 @@
 
 <body class="bg-gray-50 text-gray-800 relative selection:bg-kuGreen selection:text-white">
 
-    <!-- 우측 플로팅 메뉴 -->
     <div class="fixed right-0 top-1/4 z-40 hidden lg:flex flex-col shadow-2xl rounded-l-xl overflow-hidden transition-transform duration-300 hover:-translate-x-1">
         <div class="bg-kuYellow text-kuDark font-bold py-3 px-4 text-center text-xs flex items-center justify-between cursor-pointer border-b border-kuDark/10">
             <span><i class="fa-solid fa-bell animate-bounce"></i> 알림</span>
@@ -78,7 +94,6 @@
         </div>
     </div>
 
-    <!-- 헤더 -->
     <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent">
         <div id="top-bar" class="text-white text-[11px] py-1.5 transition-colors duration-300">
             <div class="max-w-7xl mx-auto px-4 flex justify-end gap-5 font-medium opacity-90">
@@ -90,16 +105,14 @@
 
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16 md:h-20">
-                <!-- 로고 -->
                 <div class="flex-shrink-0 flex items-center cursor-pointer gap-4">
-                    <img id="logo-img" src="assets/images/logo.png" alt="이룸 로고" class="h-10 md:h-12 w-auto object-contain brightness-0 invert transition-all duration-300">
+                    <img id="logo-img" src="/assets/images/logo.png" alt="이룸 로고" class="h-10 md:h-12 w-auto object-contain brightness-0 invert transition-all duration-300">
                     <div id="logo-divider" class="h-5 w-px bg-white/40 transition-colors duration-300"></div>
                     <div class="flex flex-col">
                         <p id="logo-text" class="text-base md:text-lg text-white font-bold mt-0.5 tracking-wider uppercase transition-colors duration-300">32대 총 학생회</p>
                     </div>
                 </div>
 
-                <!-- 데스크탑 메뉴 -->
                 <nav id="main-nav" class="hidden md:flex space-x-8 text-[15px] font-bold text-white/90 transition-colors duration-300">
                     <a href="#council" class="hover:text-kuGreen py-2 transition-colors relative group">
                         학생회 소개
@@ -119,7 +132,6 @@
                     </a>
                 </nav>
 
-                <!-- 모바일 메뉴 버튼 -->
                 <div class="flex items-center md:hidden">
                     <button id="mobile-menu-btn" class="text-2xl text-kuGreen focus:outline-none p-2">
                         <i class="fa-solid fa-bars-staggered"></i>
@@ -129,7 +141,6 @@
         </div>
     </header>
 
-    <!-- 모바일 메뉴 슬라이드 -->
     <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full xs:w-80 bg-white shadow-2xl z-[60] transform translate-x-full transition-transform duration-300 ease-out overflow-y-auto">
         <div class="p-5 flex justify-between items-center border-b border-gray-100 sticky top-0 bg-white z-10">
             <h2 class="font-display font-bold text-xl text-kuGreen">MENU</h2>
@@ -149,63 +160,45 @@
         </div>
     </div>
 
-    <!-- 1. 메인 비주얼 (Hero Section) -->
     <section class="relative h-[600px] md:h-[750px] flex items-center justify-center overflow-hidden bg-black">
-        <!-- Slider Container -->
         <div id="hero-slider" class="absolute inset-0 z-0">
-            <!-- Slide 1 -->
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" data-slide="0">
-                <img src="assets/images/hero_slide_1.png" alt="Slide 1" class="w-full h-full object-cover">
+                <img src="/assets/images/hero_slide_1.png" alt="Slide 1" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/20"></div>
             </div>
-            <!-- Slide 2 -->
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-slide="1">
-                <img src="assets/images/hero_slide_2.png" alt="Slide 2" class="w-full h-full object-cover">
+                <img src="/assets/images/hero_slide_2.png" alt="Slide 2" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/20"></div>
             </div>
-            <!-- Slide 3 -->
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" data-slide="2">
-                <img src="assets/images/hero_slide_3.png" alt="Slide 3" class="w-full h-full object-cover">
+                <img src="/assets/images/hero_slide_3.png" alt="Slide 3" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/20"></div>
             </div>
         </div>
 
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70 z-20">
             <i class="fa-solid fa-chevron-down text-2xl"></i>
         </div>
-
-
     </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('#hero-slider > div');
             let currentSlide = 0;
-            const slideInterval = 4000; // 4 seconds
+            const slideInterval = 4000;
 
             setInterval(() => {
-                // Fade out current
                 slides[currentSlide].classList.remove('opacity-100');
                 slides[currentSlide].classList.add('opacity-0');
-
-                // Next slide
                 currentSlide = (currentSlide + 1) % slides.length;
-
-                // Fade in next
                 slides[currentSlide].classList.remove('opacity-0');
                 slides[currentSlide].classList.add('opacity-100');
             }, slideInterval);
         });
     </script>
 
-
-
-
-    <!-- 2. 캠퍼스 한눈에 보기 -->
     <section id="campus" class="bg-white py-24 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4">
-            <!-- Heading -->
             <div class="mb-16">
                 <h2 class="text-4xl md:text-5xl font-display font-black text-gray-900 tracking-tight uppercase">
                     <span class="text-kuGreen">32대 총학생회</span> Campus Map
@@ -215,12 +208,10 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <!-- Map Thumbnail (Large Left) -->
                 <div class="lg:col-span-5 relative group overflow-hidden rounded-3xl shadow-2xl cursor-pointer h-[400px] lg:h-auto">
-                    <img src="assets/images/hero_bg.jpg" alt="Campus Map" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="/assets/images/hero_bg.jpg" alt="Campus Map" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
                     
-                    <!-- Map Markers (Decorative) -->
                     <div class="absolute top-[30%] left-[40%] text-kuYellow animate-bounce">
                         <i class="fa-solid fa-location-dot text-4xl drop-shadow-lg"></i>
                     </div>
@@ -234,12 +225,10 @@
                     </div>
                 </div>
 
-                <!-- Major Buildings Cards (Right) -->
                 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <!-- Building 1 -->
                     <div class="bg-gray-50 rounded-2xl p-6 group hover:bg-white hover:shadow-lg transition border border-gray-100">
                         <div class="h-40 rounded-xl overflow-hidden mb-4 relative">
-                            <img src="assets/images/students_library.jpg" class="w-full h-full object-cover" alt="Library">
+                            <img src="/assets/images/students_library.jpg" class="w-full h-full object-cover" alt="Library">
                             <span class="absolute top-2 left-2 bg-black/60 text-white text-[10px] font-bold px-2 py-0.5 rounded">No. 101</span>
                         </div>
                         <h4 class="font-bold text-lg mb-1 group-hover:text-kuGreen">중앙도서관</h4>
@@ -247,10 +236,9 @@
                         <a href="#" class="text-xs font-bold text-gray-400 group-hover:text-kuGreen flex items-center gap-1">상세보기 <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                     </div>
 
-                    <!-- Building 2 -->
                     <div class="bg-gray-50 rounded-2xl p-6 group hover:bg-white hover:shadow-lg transition border border-gray-100">
                         <div class="h-40 rounded-xl overflow-hidden mb-4 relative">
-                            <img src="assets/images/students_walking.jpg" class="w-full h-full object-cover" alt="Student Union">
+                            <img src="/assets/images/students_walking.jpg" class="w-full h-full object-cover" alt="Student Union">
                             <span class="absolute top-2 left-2 bg-black/60 text-white text-[10px] font-bold px-2 py-0.5 rounded">No. 205</span>
                         </div>
                         <h4 class="font-bold text-lg mb-1 group-hover:text-kuGreen">학생회관</h4>
@@ -258,10 +246,9 @@
                         <a href="#" class="text-xs font-bold text-gray-400 group-hover:text-kuGreen flex items-center gap-1">상세보기 <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                     </div>
 
-                    <!-- Building 3 -->
                     <div class="sm:col-span-2 bg-gray-50 rounded-2xl p-6 group hover:bg-white hover:shadow-lg transition border border-gray-100 flex gap-6 items-center">
                         <div class="w-32 h-32 rounded-xl overflow-hidden flex-shrink-0 relative">
-                            <img src="assets/images/student_mask.jpg" class="w-full h-full object-cover" alt="Global Center">
+                            <img src="/assets/images/student_mask.jpg" class="w-full h-full object-cover" alt="Global Center">
                         </div>
                         <div>
                             <span class="text-kuGreen text-xs font-bold mb-1 block">New Facility</span>
@@ -275,10 +262,8 @@
         </div>
     </section>
 
-    <!-- 3. 공지사항 / 주요 소식 -->
     <section id="news" class="w-full bg-kuGreen py-20">
         <div class="max-w-7xl mx-auto px-4">
-            <!-- Heading -->
             <div class="text-center mb-12">
                 <h2 class="text-4xl md:text-5xl font-display font-black text-white tracking-tight uppercase">
                     32대 총학생회 Today News
@@ -286,11 +271,9 @@
                 <div class="h-1 w-24 bg-kuYellow mx-auto mt-6"></div>
             </div>
 
-            <!-- Content Grid -->
             <div class="flex flex-col lg:flex-row gap-0 lg:gap-12 items-stretch">
-                <!-- Left: Featured Image -->
                 <div class="lg:w-1/2 relative group overflow-hidden rounded-3xl shadow-2xl h-[400px] lg:h-[500px]">
-                    <img src="assets/images/students_library.jpg" alt="Featured News" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                    <img src="/assets/images/students_library.jpg" alt="Featured News" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-8 text-white">
                         <span class="bg-kuYellow text-kuDark text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">HOT</span>
@@ -299,10 +282,8 @@
                     </div>
                 </div>
 
-                <!-- Right: News List -->
                 <div class="lg:w-1/2 flex flex-col justify-center mt-8 lg:mt-0">
                     <ul class="divide-y divide-white/20">
-                        <!-- List Item 1 -->
                         <li class="group cursor-pointer py-6 hover:bg-white/5 transition px-4 rounded-xl -mx-4">
                             <div class="flex justify-between items-start mb-2">
                                 <h4 class="text-xl font-bold text-white group-hover:text-kuYellow transition line-clamp-1 w-3/4">
@@ -315,7 +296,6 @@
                             </p>
                         </li>
 
-                        <!-- List Item 2 -->
                         <li class="group cursor-pointer py-6 hover:bg-white/5 transition px-4 rounded-xl -mx-4">
                             <div class="flex justify-between items-start mb-2">
                                 <h4 class="text-xl font-bold text-white group-hover:text-kuYellow transition line-clamp-1 w-3/4">
@@ -328,7 +308,6 @@
                             </p>
                         </li>
 
-                        <!-- List Item 3 -->
                         <li class="group cursor-pointer py-6 hover:bg-white/5 transition px-4 rounded-xl -mx-4">
                             <div class="flex justify-between items-start mb-2">
                                 <h4 class="text-xl font-bold text-white group-hover:text-kuYellow transition line-clamp-1 w-3/4">
@@ -352,17 +331,13 @@
         </div>
     </section>
 
-
-    <!-- 4. 이벤트 섹션 -->
     <section id="events" class="relative py-24 overflow-hidden">
-        <!-- Background Image & Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="assets/images/event_bg.jpg" alt="Background" class="w-full h-full object-cover">
+            <img src="/assets/images/event_bg.jpg" alt="Background" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/70 backdrop-blur-[2px]"></div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4">
-        <!-- Heading -->
         <div class="mb-16">
             <h2 class="text-4xl md:text-5xl font-display font-black text-white tracking-tight uppercase">
                 <span class="text-kuYellow">32대 총학생회</span> Event
@@ -371,7 +346,6 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-            <!-- Internal Events -->
             <div class="bg-white/90 rounded-3xl p-8 shadow-xl backdrop-blur-sm border border-white/50">
                 <div class="mb-8">
                     <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center gap-2">
@@ -385,10 +359,9 @@
                 </div>
 
                 <div class="space-y-6">
-                    <!-- Item 1 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">2025 건국대학교 동계 AI 부트캠프</h4>
@@ -396,10 +369,9 @@
                             <span class="inline-block bg-kuGreen/10 text-kuGreen text-[10px] font-bold px-2 py-0.5 rounded">신청접수중</span>
                         </div>
                     </a>
-                    <!-- Item 2 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">디자인대학 조형예술학과 졸업전시회</h4>
@@ -407,10 +379,9 @@
                              <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded">종료임박</span>
                         </div>
                     </a>
-                    <!-- Item 3 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">2025학년도 2학기 기말고사 간식행사</h4>
@@ -418,10 +389,9 @@
                              <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded">종료</span>
                         </div>
                     </a>
-                    <!-- Item 4 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                          <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">교내 풋살대회 'KU 챔피언스컵' 결승</h4>
@@ -429,10 +399,9 @@
                              <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded">종료</span>
                         </div>
                     </a>
-                    <!-- Item 5 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">2025 건국 예술제 공연 안내</h4>
@@ -443,7 +412,6 @@
                 </div>
             </div>
 
-            <!-- External Events -->
             <div class="bg-white/90 rounded-3xl p-8 shadow-xl backdrop-blur-sm border border-white/50">
                  <div class="mb-8">
                     <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center gap-2">
@@ -457,10 +425,9 @@
                 </div>
 
                 <div class="space-y-6">
-                    <!-- Item 1 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">해외직구 전자기기 중고거래 유의사항</h4>
@@ -468,10 +435,9 @@
                              <span class="inline-block bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">HOT</span>
                         </div>
                     </a>
-                    <!-- Item 2 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">2026년도 ICT자격검정 시행 일정 안내</h4>
@@ -479,10 +445,9 @@
                              <span class="inline-block bg-kuGreen/10 text-kuGreen text-[10px] font-bold px-2 py-0.5 rounded">접수중</span>
                         </div>
                     </a>
-                    <!-- Item 3 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">대학생 연합 마케팅 동아리 신입 부원 모집</h4>
@@ -490,10 +455,9 @@
                              <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded">D-3</span>
                         </div>
                     </a>
-                    <!-- Item 4 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">청년 취업 역량 강화 무료 특강</h4>
@@ -501,10 +465,9 @@
                              <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded">종료</span>
                         </div>
                     </a>
-                    <!-- Item 5 -->
                     <a href="#" class="group flex gap-5 items-center hover:bg-gray-50 p-3 rounded-xl transition -mx-3 border border-transparent hover:border-gray-100">
                         <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 relative">
-                             <img src="assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                             <img src="/assets/images/students_library.jpg" alt="Event" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         </div>
                         <div class="flex-1 min-w-0">
                             <h4 class="font-bold text-gray-900 text-lg mb-1 group-hover:text-kuGreen transition truncate">2025 전국 대학생 건축 공모전</h4>
@@ -517,20 +480,15 @@
         </div>
     </section>
 
-
-
-    <!-- 6. 학생회 소개 요약 -->
     <section id="council" class="max-w-7xl mx-auto px-4 py-24 mb-20 relative">
         <div class="bg-kuDark rounded-[2.5rem] p-8 md:p-20 overflow-hidden relative shadow-2xl text-white">
-            <!-- Background Elements -->
             <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-kuGreen rounded-full filter blur-[100px] opacity-30 -translate-y-1/2 translate-x-1/2"></div>
             <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-kuYellow rounded-full filter blur-[80px] opacity-10 translate-y-1/2 -translate-x-1/2"></div>
 
             <div class="relative z-10 flex flex-col md:flex-row items-center gap-12 md:gap-20">
-                <!-- President Photo -->
                 <div class="relative group">
                     <div class="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl relative z-20">
-                        <img src="assets/images/president.jpg" alt="학생회장" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                        <img src="/assets/images/president.jpg" alt="학생회장" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                     </div>
                     <div class="absolute inset-0 rounded-full border border-white/30 scale-110 z-10 animate-pulse-slow"></div>
                     <div class="absolute -bottom-6 -right-6 bg-white text-kuDark p-4 rounded-xl shadow-lg z-30 animate-bounce-slow">
@@ -538,7 +496,6 @@
                     </div>
                 </div>
 
-                <!-- Content -->
                 <div class="text-center md:text-left flex-1">
                     <span class="text-kuYellow font-bold tracking-widest text-sm mb-4 block uppercase border-b border-white/10 pb-4 inline-block md:inline-block">Student Council President</span>
                     <h3 class="text-2xl md:text-4xl font-display font-black mb-8 leading-normal">
@@ -566,13 +523,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-darkBg text-gray-400 py-16 text-sm border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-start gap-12">
                 <div>
                     <div class="flex items-center gap-2 mb-6">
-                        <img src="assets/images/logo.png" alt="이룸 로고" class="h-12 w-auto object-contain opacity-90">
+                        <img src="/assets/images/logo.png" alt="이룸 로고" class="h-12 w-auto object-contain opacity-90">
                     </div>
                     <p class="leading-relaxed text-xs text-gray-500 mb-6">
                         (05029) 서울특별시 광진구 능동로 120 (화양동)<br>
@@ -620,56 +576,43 @@
         const closeBtn = document.getElementById('mobile-close-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        // Header Scroll Effect Elements
-        // Header Scroll Effect Elements
         const header = document.getElementById('main-header');
-        const topBar = document.getElementById('top-bar'); // Top Utility Bar
+        const topBar = document.getElementById('top-bar');
         const logoImg = document.getElementById('logo-img');
         const logoText = document.getElementById('logo-text');
         const logoDivider = document.getElementById('logo-divider');
         const mainNav = document.getElementById('main-nav');
-        // Mobile menu button color control
         const mobileBtnIcon = menuBtn.querySelector('i');
 
         function updateHeader() {
             if (window.scrollY > 50) {
-                // Scrolled Down (Green Background)
                 header.classList.remove('bg-transparent');
                 header.classList.add('bg-kuGreen/95', 'backdrop-blur-md', 'shadow-md');
-                header.classList.remove('border-b', 'border-gray-200/50'); // Remove border on green bg
+                header.classList.remove('border-b', 'border-gray-200/50');
                 
-                // Top Bar: White Background on Scroll
                 if(topBar) {
                     topBar.classList.add('bg-white', 'text-kuGreen');
                     topBar.classList.remove('text-white');
                 }
                 
-                // Keep Logo & Text White (No changes needed to remove white classes)
-                // Just ensure they stay default (white)
-                
-                // Mobile Btn
                 menuBtn.classList.add('text-white');
                 menuBtn.classList.remove('text-kuGreen');
             } else {
-                // Top (Transparent)
                 header.classList.add('bg-transparent');
                 header.classList.remove('bg-kuGreen/95', 'backdrop-blur-md', 'shadow-md');
                 header.classList.remove('border-b', 'border-gray-200/50');
                 
-                // Top Bar: Transparent & White Text
                  if(topBar) {
                     topBar.classList.remove('bg-white', 'text-kuGreen');
                     topBar.classList.add('text-white');
                 }
                 
-                // Mobile Btn
                 menuBtn.classList.add('text-white');
                 menuBtn.classList.remove('text-kuGreen');
             }
         }
 
         window.addEventListener('scroll', updateHeader);
-        // Initialize on load
         updateHeader();
 
         menuBtn.addEventListener('click', () => {
@@ -691,3 +634,5 @@
     </script>
 </body>
 </html>
+
+
