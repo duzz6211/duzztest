@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건국대학교 글로컬캠퍼스 총학생회</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="utility-bar" id="utilityBar">
+        <div class="container">
+            <div class="ku-service">
+                <a href="#" target="_blank">건국대학교 홈</a>
+                <a href="#" target="_blank">포털시스템</a>
+                <a href="#" target="_blank">도서관</a>
+                <a href="#" target="_blank">학사정보</a>
+            </div>
+            <div class="utility-links">
+                <a href="#">로그인</a>
+                <a href="#">사이트맵</a>
+                <button type="button" class="search-btn" aria-label="검색">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <h1 class="logo">
+                <a href="#" aria-label="홈으로 이동">
+                    <img src="https://showfolio.co.kr/eroom/assets/images/logo.png" 
+                         alt="건국대학교 글로컬캠퍼스 총학생회" 
+                         class="logo-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder" style="display:none;">
+                        <span class="logo-text-main">KU</span>
+                        <span class="logo-text-sub">GLOCAL</span>
+                    </div>
+                </a>
+            </h1>
+            
+            <nav class="main-nav" id="mainNav" role="navigation" aria-label="메인 네비게이션">
+                <ul class="gnb-depth1">
+                    <li class="has-submenu">
+                        <a href="#">총학생회 소개</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">국서 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#notice">공지·소식</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#participation">학생참여</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">학생청원</a></li>
+                            <li><a href="#">설문조사</a></li>
+                            <li><a href="#">건의함</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#campus">시설/캠퍼스</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">캠퍼스맵</a></li>
+                            <li><a href="#">건물 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소통/Q&amp;A</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-title">MENU</span>
+            <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="메뉴 닫기">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item">
+                <button type="button" class="mobile-nav-link has-sub" aria-expanded="false">
+                    총학생회 소개 <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">국서 소개</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#notice" class="mobile-nav-link">공지·소식</a>
+            </li>
+            <li class="mobile-nav-item">
+                <button type="button" class="mobile-nav-link has-sub" aria-expanded="false">
+                    학생참여 <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">학생청원</a></li>
+                    <li><a href="#">설문조사</a></li>
+                    <li><a href="#">건의함</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item">
+                <button type="button" class="mobile-nav-link has-sub" aria-expanded="false">
+                    시설/캠퍼스 <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">캠퍼스맵</a></li>
+                    <li><a href="#">건물 소개</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#" class="mobile-nav-link">소통/Q&amp;A</a>
+            </li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="#" class="btn-mobile-login">로그인</a>
+            <a href="#" class="btn-mobile-portal">학교 홈페이지</a>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="hero" aria-label="메인 비주얼">
+        <div class="slider-container" id="heroSlider">
+            <div class="slide active" data-slide="0">
+                <div class="slide-bg" data-bg="https://showfolio.co.kr/eroom/assets/images/hero_slide_1.png"></div>
+                <div class="slide-content container">
+                    <p class="slide-sub">소통과 참여</p>
+                    <h2 class="slide-title">학우 여러분의 목소리가<br><span class="highlight">정책이 됩니다</span></h2>
+                    <div class="slide-cta">
+                        <a href="#" class="btn btn-primary">청원하기</a>
+                        <a href="#notice" class="btn btn-secondary">공지사항 보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-slide="1">
+                <div class="slide-bg" data-bg="https://showfolio.co.kr/eroom/assets/images/hero_slide_2.png"></div>
+                <div class="slide-content container">
+                    <p class="slide-sub">함께 만드는 캠퍼스</p>
+                    <h2 class="slide-title">청원 · 설문 · Q&amp;A로<br><span class="highlight">더 나은 캠퍼스를</span></h2>
+                    <div class="slide-cta">
+                        <a href="#participation" class="btn btn-primary">학생참여 바로가기</a>
+                        <a href="#" class="btn btn-secondary">총학생회 소개</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-slide="2">
+                <div class="slide-bg" data-bg="https://showfolio.co.kr/eroom/assets/images/hero_slide_3.png"></div>
+                <div class="slide-content container">
+                    <p class="slide-sub">제32대 총학생회</p>
+                    <h2 class="slide-title">언제나 곁에 있는<br><span class="highlight">든든한 학생회</span></h2>
+                    <div class="slide-cta">
+                        <a href="#council" class="btn btn-primary">학생회 소개</a>
+                        <a href="#campus" class="btn btn-secondary">캠퍼스 안내</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-controls container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="slider-arrows">
+                <button type="button" class="slider-btn prev-btn" id="prevBtn" aria-label="이전 슬라이드">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button type="button" class="slider-btn pause-btn" id="pauseBtn" aria-label="슬라이더 일시정지">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button type="button" class="slider-btn next-btn" id="nextBtn" aria-label="다음 슬라이드">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <aside class="quick-menu-floating" id="quickMenu" aria-label="퀵 메뉴">
+        <div class="qm-header">
+            <span class="qm-title">Quick Menu</span>
+            <button type="button" class="qm-toggle" id="qmToggle" aria-label="퀵메뉴 접기/펼치기" aria-expanded="true">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <ul class="qm-list">
+            <li>
+                <a href="#notice">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>공지사항</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>학생청원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#campus">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>캠퍼스맵</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-comments"></i>
+                    <span>Q&amp;A</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-inbox"></i>
+                    <span>건의함</span>
+                </a>
+            </li>
+        </ul>
+        <button type="button" class="qm-top" id="scrollTopBtn" aria-label="맨 위로 이동">
+            <span class="qm-top-text">TOP</span> <i class="fas fa-chevron-up"></i>
+        </button>
+    </aside>
+
+    <nav class="quick-menu-mobile" id="quickMenuMobile" aria-label="모바일 퀵 메뉴">
+        <a href="#notice" class="qm-mobile-item">
+            <i class="fas fa-bullhorn"></i>
+            <span>공지</span>
+        </a>
+        <a href="#" class="qm-mobile-item">
+            <i class="fas fa-pen-nib"></i>
+            <span>청원</span>
+        </a>
+        <a href="#campus" class="qm-mobile-item">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>맵</span>
+        </a>
+        <a href="#" class="qm-mobile-item">
+            <i class="fas fa-comments"></i>
+            <span>Q&A</span>
+        </a>
+        <button type="button" class="qm-mobile-item qm-mobile-top" id="scrollTopBtnMobile" aria-label="맨 위로">
+            <i class="fas fa-chevron-up"></i>
+            <span>TOP</span>
+        </button>
+    </nav>
+
+    <section class="section participation-section" id="participation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent">STUDENT</span> Participation</h2>
+                <p class="section-desc">학우 여러분의 목소리로 캠퍼스를 바꿔나갑니다</p>
+            </div>
+            
+            <div class="participation-grid">
+                <a href="#" class="participation-card card-petition">
+                    <div class="card-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">학생청원</h3>
+                        <p class="card-desc">학우 여러분의 의견을 제안하고 정책으로 반영될 수 있도록 청원하세요.</p>
+                        <div class="card-meta">
+                            <span class="badge badge-active">진행중 청원 <strong>12</strong>건</span>
+                            <span class="badge badge-deadline">마감임박 D-3</span>
+                        </div>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="#" class="participation-card card-survey">
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">설문조사</h3>
+                        <p class="card-desc">학교 정책과 행사 기획에 참여하는 여러분의 소중한 의견을 모읍니다.</p>
+                        <div class="card-meta">
+                            <span class="badge badge-active">진행중 설문 <strong>5</strong>건</span>
+                        </div>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="#" class="participation-card card-suggestion">
+                    <div class="card-icon">
+                        <i class="fas fa-inbox"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">건의함</h3>
+                        <p class="card-desc">익명으로 자유롭게 학교생활에 관한 건의사항을 제안해주세요.</p>
+                        <div class="card-meta">
+                            <span class="badge badge-info">익명 제출 가능</span>
+                        </div>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="#" class="participation-card card-qna">
+                    <div class="card-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">민원/상담</h3>
+                        <p class="card-desc">학생회 관련 문의사항이나 민원을 접수하시면 신속히 답변드립니다.</p>
+                        <div class="card-meta">
+                            <span class="badge badge-info">평균 답변 1~2일</span>
+                        </div>
+                    </div>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section notice-section" id="notice">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title-wrap">
+                    <h2 class="section-title"><span class="accent">STUDENT</span> Notice</h2>
+                    <a href="#" class="more-link">더보기 <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="tab-container" role="tablist" aria-label="공지사항 카테고리">
+                <ul class="tab-list">
+                    <li>
+                        <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-all">전체</button>
+                    </li>
+                    <li>
+                        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-notice">공지</button>
+                    </li>
+                    <li>
+                        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-event">행사</button>
+                    </li>
+                    <li>
+                        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-finance">재정보고</button>
+                    </li>
+                    <li>
+                        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-welfare">복지혜택</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content active" id="tab-all" role="tabpanel">
+                    <div class="notice-grid">
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-notice">공지</span>
+                            <h4 class="notice-title">2026학년도 1학기 총학생회비 납부 안내</h4>
+                            <p class="notice-desc">2026학년도 1학기 총학생회비 납부 기간 및 방법을 안내해 드립니다. 학생 여러분의 많은 참여 바랍니다.</p>
+                            <span class="notice-date">2026.02.15</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-event">행사</span>
+                            <h4 class="notice-title">신입생 오리엔테이션 일정 안내</h4>
+                            <p class="notice-desc">2026학년도 신입생 여러분을 환영합니다. 학과별 오리엔테이션 일정과 장소를 확인하세요.</p>
+                            <span class="notice-date">2026.02.10</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-finance">재정</span>
+                            <h4 class="notice-title">2025학년도 2학기 총학생회 결산 보고</h4>
+                            <p class="notice-desc">투명한 학생회 운영을 위해 2025학년도 2학기 총학생회비 결산 내역을 공개합니다.</p>
+                            <span class="notice-date">2026.01.20</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-welfare">복지</span>
+                            <h4 class="notice-title">시험기간 간식행사 진행 안내</h4>
+                            <p class="notice-desc">중간고사를 맞아 학우 여러분을 응원하기 위해 간식행사를 진행합니다. (선착순 500명)</p>
+                            <span class="notice-date">2025.10.20</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab-notice" role="tabpanel">
+                    <div class="notice-grid">
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-notice">공지</span>
+                            <h4 class="notice-title">2026학년도 1학기 사물함 신청 안내</h4>
+                            <p class="notice-desc">학생회관 사물함 신청 기간입니다. 기간 내에 신청해주시기 바랍니다.</p>
+                            <span class="notice-date">2026.02.20</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-notice">공지</span>
+                            <h4 class="notice-title">교내 셔틀버스 방학 중 운행 시간 변경</h4>
+                            <p class="notice-desc">방학 기간 동안 교내 셔틀버스 운행 시간이 변경되오니 이용에 착오 없으시기 바랍니다.</p>
+                            <span class="notice-date">2026.01.05</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-notice">공지</span>
+                            <h4 class="notice-title">학생회관 이용 수칙 안내</h4>
+                            <p class="notice-desc">쾌적한 학생회관 이용을 위해 학우 여러분의 협조를 부탁드립니다.</p>
+                            <span class="notice-date">2025.12.10</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-notice">공지</span>
+                            <h4 class="notice-title">분실물 센터 운영 안내</h4>
+                            <p class="notice-desc">교내에서 습득된 분실물을 보관하고 있습니다. 총학생회실로 문의해주세요.</p>
+                            <span class="notice-date">2025.11.30</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab-event" role="tabpanel">
+                    <div class="notice-grid">
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-event">행사</span>
+                            <h4 class="notice-title">가을 대동제 축제 라인업 공개</h4>
+                            <p class="notice-desc">2025 가을 대동제! 뜨거운 열기를 함께할 초청 아티스트 라인업을 공개합니다.</p>
+                            <span class="notice-date">2025.09.15</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-event">행사</span>
+                            <h4 class="notice-title">e-Sports 대회 참가자 모집</h4>
+                            <p class="notice-desc">총학생회장배 e-Sports 대회 참가자를 모집합니다. 우승팀에게는 상금이 수여됩니다.</p>
+                            <span class="notice-date">2025.05.10</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-event">행사</span>
+                            <h4 class="notice-title">농촌봉사활동 참가자 모집</h4>
+                            <p class="notice-desc">여름방학 농촌봉사활동에 참여할 학우 여러분을 모집합니다.</p>
+                            <span class="notice-date">2025.06.01</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-event">행사</span>
+                            <h4 class="notice-title">체육대회 일정 안내</h4>
+                            <p class="notice-desc">단과대 대항 체육대회가 개최됩니다. 학우 여러분의 많은 참여 바랍니다.</p>
+                            <span class="notice-date">2025.04.20</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab-finance" role="tabpanel">
+                    <div class="notice-grid">
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-finance">재정</span>
+                            <h4 class="notice-title">3월 학생회비 사용 내역 공개</h4>
+                            <p class="notice-desc">3월 학생회비 사용 내역 및 영수증 증빙 자료를 공개합니다.</p>
+                            <span class="notice-date">2026.04.05</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-finance">재정</span>
+                            <h4 class="notice-title">1분기 감사 보고서</h4>
+                            <p class="notice-desc">총학생회 감사위원회의 1분기 감사 결과를 보고합니다.</p>
+                            <span class="notice-date">2026.03.30</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-finance">재정</span>
+                            <h4 class="notice-title">2월 학생회비 사용 내역 공개</h4>
+                            <p class="notice-desc">2월 학생회비 사용 내역 및 영수증 증빙 자료를 공개합니다.</p>
+                            <span class="notice-date">2026.03.05</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-finance">재정</span>
+                            <h4 class="notice-title">예산안 심의 결과 공고</h4>
+                            <p class="notice-desc">2026학년도 총학생회 예산안 심의 결과를 공고합니다.</p>
+                            <span class="notice-date">2026.02.28</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab-welfare" role="tabpanel">
+                    <div class="notice-grid">
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-welfare">복지</span>
+                            <h4 class="notice-title">제휴 업체 할인 혜택 안내</h4>
+                            <p class="notice-desc">총학생회와 제휴를 맺은 학교 주변 업체들의 할인 혜택을 확인하세요.</p>
+                            <span class="notice-date">2026.03.10</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-welfare">복지</span>
+                            <h4 class="notice-title">우산 대여 서비스 운영</h4>
+                            <p class="notice-desc">갑작스러운 비에 당황하지 마세요! 총학생회실에서 우산을 대여해드립니다.</p>
+                            <span class="notice-date">2026.03.01</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-welfare">복지</span>
+                            <h4 class="notice-title">프린트 무료 이용권 배부</h4>
+                            <p class="notice-desc">시험기간을 맞아 프린트 무료 이용권을 배부합니다.</p>
+                            <span class="notice-date">2025.10.15</span>
+                        </a>
+                        <a href="#" class="notice-card">
+                            <span class="notice-cat cat-welfare">복지</span>
+                            <h4 class="notice-title">여성용품 비치 안내</h4>
+                            <p class="notice-desc">학생회관 및 주요 건물 화장실에 여성용품을 비치하였습니다.</p>
+                            <span class="notice-date">2025.09.01</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section event-section" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent">CAMPUS</span> Event</h2>
+            </div>
+            
+            <div class="event-desc-grid">
+                <div class="event-desc-item">
+                    <span class="marker"></span>
+                    <h4>학생회 행사</h4>
+                    <p class="main-p">학우 여러분이 주체가 되어 참여하는 다채로운 행사들을 소개합니다.</p>
+                    <p class="sub-p">대동제, 체육대회, 간식행사 등 즐거운 캠퍼스 라이프를 위한 행사 정보를 확인하세요.</p>
+                </div>
+                <div class="event-desc-item">
+                    <span class="marker"></span>
+                    <h4>학교/외부 행사</h4>
+                    <p class="main-p">학교 본부 및 외부 기관에서 주최하는 유익한 프로그램들을 안내합니다.</p>
+                    <p class="sub-p">취업 박람회, 명사 초청 특강, 봉사활동 등 다양한 경험의 기회를 놓치지 마세요.</p>
+                </div>
+            </div>
+            
+            <div class="event-columns">
+                <div class="event-column">
+                    <h3 class="event-column-title">
+                        <i class="fas fa-star"></i> 학생회 행사
+                    </h3>
+                    <div class="event-list-wrapper">
+                        <div class="event-list">
+                            <a href="#" class="event-card">
+                                <div class="event-thumb">
+                                    <div class="thumb-placeholder"></div>
+                                    <span class="event-status status-ongoing">진행중</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-date">2026.01.15 ~ 01.30</span>
+                                    <h4 class="event-title">2026 동계 AI 부트캠프 참가자 모집</h4>
+                                    <p class="event-desc">AI 기초부터 실전까지, 4주간의 집중 교육 프로그램입니다.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="event-card">
+                                <div class="event-thumb">
+                                    <div class="thumb-placeholder"></div>
+                                    <span class="event-status status-upcoming">진행예정</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-date">2026.01.20</span>
+                                    <h4 class="event-title">시험기간 간식행사 (선착순 500명)</h4>
+                                    <p class="event-desc">시험 기간 학우들을 응원하는 간식 배부 행사입니다.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="event-card">
+                                <div class="event-thumb">
+                                    <div class="thumb-placeholder"></div>
+                                    <span class="event-status status-ended">종료</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-date">2025.12.16 ~ 12.20</span>
+                                    <h4 class="event-title">미디어콘텐츠학과 졸업작품 전시회</h4>
+                                    <p class="event-desc">졸업생들의 열정이 담긴 작품들을 만나보세요.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-column">
+                    <h3 class="event-column-title">
+                        <i class="fas fa-globe"></i> 학교/외부 행사
+                    </h3>
+                    <div class="event-list-wrapper">
+                        <div class="event-list">
+                            <a href="#" class="event-card">
+                                <div class="event-thumb">
+                                    <div class="thumb-placeholder"></div>
+                                    <span class="event-status status-upcoming">진행예정</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-date">2026.01.31</span>
+                                    <h4 class="event-title">중고거래 사기 예방 캠페인</h4>
+                                    <p class="event-desc">안전한 거래를 위한 유의사항을 안내합니다.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="event-card">
+                                <div class="event-thumb">
+                                    <div class="thumb-placeholder"></div>
+                                    <span class="event-status status-ongoing">진행중</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-date">2026.01.15 마감</span>
+                                    <h4 class="event-title">2026년도 자격증 취득 지원 프로그램</h4>
+                                    <p class="event-desc">자격증 취득 비용을 지원해드립니다.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="event-card">
+                                <div class="event-thumb">
+                                    <div class="thumb-placeholder"></div>
+                                    <span class="event-status status-ended">종료</span>
+                                </div>
+                                <div class="event-info">
+                                    <span class="event-date">2025.12.20</span>
+                                    <h4 class="event-title">청년 취업 역량 강화 무료 특강</h4>
+                                    <p class="event-desc">취업 준비생을 위한 무료 특강이 진행되었습니다.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section campus-section" id="campus">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="accent">CAMPUS</span> Map</h2>
+                <p class="section-desc">우리 학교의 주요 시설을 한눈에 확인해보세요</p>
+            </div>
+            
+            <div class="campus-grid">
+                <div class="campus-map-card">
+                    <div class="map-thumbnail">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="map-marker">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="map-content">
+                        <h3 class="map-title">캠퍼스 맵 보기</h3>
+                        <p class="map-desc">건물 위치 및 시설 정보를 확인하세요.</p>
+                        <span class="map-link">지도 열기 <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                
+                <div class="building-cards">
+                    <a href="#" class="building-card">
+                        <div class="building-thumb">
+                            <div class="building-placeholder"></div>
+                            <span class="building-number">No. 101</span>
+                        </div>
+                        <div class="building-info">
+                            <h4 class="building-name">중앙도서관</h4>
+                            <p class="building-desc">24시간 열람실 및 멀티미디어실, 그룹스터디룸 완비</p>
+                            <span class="building-link">상세보기 <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#" class="building-card">
+                        <div class="building-thumb">
+                            <div class="building-placeholder"></div>
+                            <span class="building-number">No. 205</span>
+                        </div>
+                        <div class="building-info">
+                            <h4 class="building-name">학생회관</h4>
+                            <p class="building-desc">총학생회실, 동아리방, 학생식당 및 편의시설</p>
+                            <span class="building-link">상세보기 <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#" class="building-card">
+                        <div class="building-thumb">
+                            <div class="building-placeholder"></div>
+                            <span class="building-number">No. 301</span>
+                        </div>
+                        <div class="building-info">
+                            <h4 class="building-name">행정관</h4>
+                            <p class="building-desc">학사행정, 학생지원, 총무 등 주요 행정부서 위치</p>
+                            <span class="building-link">상세보기 <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="#" class="building-card highlight">
+                        <div class="building-thumb">
+                            <div class="building-placeholder"></div>
+                            <span class="building-badge">NEW</span>
+                        </div>
+                        <div class="building-info">
+                            <h4 class="building-name">글로벌 강의동</h4>
+                            <p class="building-desc">최첨단 강의실과 휴게 공간이 마련된 신축 강의동입니다.</p>
+                            <span class="building-link">상세보기 <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section council-section" id="council">
+        <div class="container">
+            <div class="section-header council-header">
+                <h2 class="section-title"><span class="accent">학생회</span>, 이렇게 일합니다</h2>
+                <p class="section-desc">청원 처리 프로세스 · 재정 공개 · 학생 복지</p>
+            </div>
+
+            <div class="council-main-grid">
+                <div class="council-intro-block">
+                    <div class="intro-content">
+                        <p class="intro-text">
+                            제32대 총학생회는 <strong>투명성과 실행력</strong>을 최우선으로 합니다.<br>
+                            모든 청원은 정해진 절차에 따라 검토되며, 진행 상황과 결과를 학우 여러분께 공개합니다.
+                        </p>
+                        <div class="intro-actions">
+                            <a href="#" class="btn-council" data-type="petition">
+                                <i class="fas fa-file-signature"></i>
+                                청원 현황 보기
+                            </a>
+                            <a href="#" class="btn-council" data-type="finance">
+                                <i class="fas fa-chart-pie"></i>
+                                재정보고 확인
+                            </a>
+                        </div>
+                    </div>
+                    <div class="president-mini">
+                        <div class="president-avatar">
+                            <span class="avatar-initials">회장</span>
+                        </div>
+                        <div class="president-info">
+                            <span class="president-name">제32대 총학생회장 · 소통국</span>
+                            <span class="president-contact">council@kku.ac.kr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="council-process-grid">
+                    <div class="process-card" data-step="1">
+                        <div class="process-icon">
+                            <i class="fas fa-inbox"></i>
+                        </div>
+                        <div class="process-content">
+                            <h4 class="process-title">접수</h4>
+                            <p class="process-desc">청원 및 건의사항을 온라인으로 접수합니다.</p>
+                        </div>
+                        <span class="process-step">01</span>
+                    </div>
+                    <div class="process-card" data-step="2">
+                        <div class="process-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="process-content">
+                            <h4 class="process-title">검토</h4>
+                            <p class="process-desc">담당 부서에서 내용을 분석하고 검토합니다.</p>
+                        </div>
+                        <span class="process-step">02</span>
+                    </div>
+                    <div class="process-card" data-step="3">
+                        <div class="process-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="process-content">
+                            <h4 class="process-title">공지</h4>
+                            <p class="process-desc">검토 결과와 진행 상황을 투명하게 안내합니다.</p>
+                        </div>
+                        <span class="process-step">03</span>
+                    </div>
+                    <div class="process-card" data-step="4">
+                        <div class="process-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="process-content">
+                            <h4 class="process-title">실행</h4>
+                            <p class="process-desc">확정된 정책을 신속하게 이행합니다.</p>
+                        </div>
+                        <span class="process-step">04</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="council-stats">
+                <div class="stat-card" data-stat="processing">
+                    <span class="stat-number" data-value="12">12</span>
+                    <span class="stat-label">처리중 청원</span>
+                </div>
+                <div class="stat-card" data-stat="completed">
+                    <span class="stat-number" data-value="48">48</span>
+                    <span class="stat-label">답변 완료</span>
+                </div>
+                <div class="stat-card" data-stat="events">
+                    <span class="stat-number" data-value="5">5</span>
+                    <span class="stat-label">진행 행사</span>
+                </div>
+                <div class="stat-card stat-highlight" data-stat="deadline">
+                    <span class="stat-badge">평균 처리 기한</span>
+                    <span class="stat-number">3<small>일</small></span>
+                    <span class="stat-label">청원 접수 후</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <ul class="footer-menu">
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                <div class="footer-sns">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="https://www.kku.ac.kr/directFile/front/hpg/images/common/cm_logo_b.png" 
+                         alt="건국대학교 글로컬캠퍼스" 
+                         class="footer-logo-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder-footer" style="display:none;">
+                        <span>Konkuk Univ.</span>
+                    </div>
+                </div>
+                <address class="footer-address">
+                    <span class="addr">충청북도 충주시 충원대로 268 건국대학교 글로컬캠퍼스 총학생회</span>
+                    <span class="tel">Tel. 043-840-3114 | 운영시간: 평일 10:00 - 18:00</span>
+                    <span class="email">대표 이메일: council@kku.ac.kr</span>
+                    <p class="copyright">COPYRIGHT © KONKUK UNIVERSITY GLOCAL CAMPUS STUDENT COUNCIL. ALL RIGHTS RESERVED.</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
