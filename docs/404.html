@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=./" />
+    <script>
+      // SPA redirect for GitHub Pages
+      // /{repo}/some/path  ->  /{repo}/?/some/path
+      (function () {
+        var l = window.location;
+        var parts = l.pathname.split('/').filter(Boolean);
+        // assume repo pages: first segment is repo name
+        var repo = parts.length ? parts[0] : '';
+        var rest = parts.slice(1).join('/');
+        var base = repo ? '/' + repo + '/' : '/';
+        var newUrl =
+          l.protocol +
+          '//' +
+          l.host +
+          base +
+          '?/' +
+          rest +
+          (l.search ? '&' + l.search.slice(1) : '') +
+          l.hash;
+        l.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
+
+
