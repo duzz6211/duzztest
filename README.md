@@ -1,4 +1,4 @@
-# DuzzTest - Coming Soon Page
+# DUZZ - Coming Soon Page
 
 전문적인 준비 중 페이지입니다.
 

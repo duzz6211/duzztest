@@ -24,7 +24,7 @@ function App() {
         </div>
         
         <div className="footer">
-          <p>© 2026 DuzzTest. All rights reserved.</p>
+          <p>© 2026 DUZZ. All rights reserved.</p>
         </div>
       </div>
     </div>
